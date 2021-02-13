@@ -25,14 +25,14 @@ class bulmapress_navwalker extends Walker_Nav_Menu {
 
 	public function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
 
-		$liClasses = 'navbar-item '.$item->title;
+		$liClasses = implode(' ', $item->classes) . ' navbar-item '.$item->title;
 
 		$hasChildren = $args->walker->has_children;
 		$liClasses .= $hasChildren? " has-dropdown is-hoverable": "";
 
 		if($hasChildren){
 			$output .= "<div class='".$liClasses."'>";
-			$output .= "\n<a class='navbar-link' href='".$item->url."'>".$item->title."</a>";
+			$output .= "\n<a class='navbar-link is-arrowless' href='".$item->url."'>".$item->title."</a>";
 		}
 		else {
 			$output .= "<a class='".$liClasses."' href='".$item->url."'>".$item->title;
