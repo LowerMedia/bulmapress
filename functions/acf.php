@@ -81,4 +81,21 @@ if ( class_exists('ACF') ) {
 	function display_acf_formatted_phonenumber( $acf_handle = 'phone_number', $link_classes = '', $link_wrap = true ) {
 		echo get_acf_formatted_phonenumber( $acf_handle, $link_classes, $link_wrap );
 	}
+} else {
+
+	function acf_deactivated_fallback_warning() {
+		return "ACF Must Be enabled and the theme options page must be set";
+	}
+
+	function get_acf_image_from_handle() {
+		acf_deactivated_fallback_warning();
+	}
+
+	function display_acf_formatted_phonenumber() {
+		acf_deactivated_fallback_warning();
+	}
+
+	function the_field() {
+		acf_deactivated_fallback_warning();
+	}
 }

@@ -37,3 +37,5 @@ require get_template_directory() . '/functions/template-tags.php';
 require get_template_directory() . '/functions/extras.php';
 require get_template_directory() . '/functions/customizer.php';
 require get_template_directory() . '/functions/jetpack.php';
+require get_template_directory() . '/functions/acf.php';
+require get_template_directory() . '/functions/cpt.php';
