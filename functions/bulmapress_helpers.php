@@ -8,9 +8,12 @@
  */
 
 if ( ! function_exists( 'bulmapress_home_link' ) ) {
-	function bulmapress_home_link($class)
+	function bulmapress_home_link($class, $innerContent = 'default' )
 	{
-		$output = '<a href="' . esc_url( home_url( '/' ) ) . '" class="' . $class . '" rel="home">' . get_bloginfo('name') . '</a>';
+		if ( $innerContent === 'default' ) {
+			$innerContent = get_bloginfo('name');
+		}
+		$output = '<a href="' . esc_url( home_url( '/' ) ) . '" class="' . $class . '" rel="home">' . $innerContent . '</a>';
 		echo $output;
 	}
 }
