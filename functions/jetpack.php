@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package Bulmapress
+ * @package BulmapressStarter
  */
 
 if ( ! function_exists( 'bulmapress_jetpack_setup' ) ) {

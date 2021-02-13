@@ -2,7 +2,7 @@
 /**
  * Navigation Functions
  *
- * @package Bulmapress
+ * @package BulmapressStarter
  */
 
 // This theme uses wp_nav_menu() in one location.

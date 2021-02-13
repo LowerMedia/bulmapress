@@ -2,7 +2,7 @@
 /**
  * Search Functions
  *
- * @package Bulmapress
+ * @package BulmapressStarter
  */
 
 if ( ! function_exists( 'bulmapress_search_form' ) ) {

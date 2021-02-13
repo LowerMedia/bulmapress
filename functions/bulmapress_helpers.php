@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Bulmapress
+ * @package BulmapressStarter
  */
 
 if ( ! function_exists( 'bulmapress_home_link' ) ) {

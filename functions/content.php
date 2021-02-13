@@ -2,7 +2,7 @@
 /**
  * Content Functions
  *
- * @package Bulmapress
+ * @package BulmapressStarter
  */
 
 if ( ! function_exists( 'bulmapress_content_width' ) ) {

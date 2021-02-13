@@ -2,7 +2,7 @@
 /**
  * Scripts & Styles
  *
- * @package Bulmapress
+ * @package BulmapressStarter
  */
 
 if ( ! function_exists( 'bulmapress_scripts' ) ) {

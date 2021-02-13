@@ -2,7 +2,7 @@
 /**
  * Theme Customizer Functions
  *
- * @package Bulmapress
+ * @package BulmapressStarter
  */
 
 if ( ! function_exists( 'bulmapress_customize_register' ) ) {

@@ -2,7 +2,7 @@
 /**
  * Pagination Functions
  *
- * @package Bulmapress
+ * @package BulmapressStarter
  */
 
 if ( ! function_exists( 'bulmapress_pagination' ) ) {

@@ -3,7 +3,7 @@
  * Custom Query Function
  *
  *
- * @package Bulmapress
+ * @package BulmapressStarter
  */
 
 if ( ! function_exists( 'bulmapress_custom_query' ) ) {
