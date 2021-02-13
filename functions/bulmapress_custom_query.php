@@ -14,7 +14,7 @@ if ( ! function_exists( 'bulmapress_custom_query' ) ) {
 		$section_title = $args['section_title'] ? $args['section_title'] : 'Recent Posts';
 		$section_columns = $args['section_columns'] ? $args['section_columns'] : 3;
 		$section_max_posts = $args['section_max_posts'] ? $args['section_max_posts'] : 3;
-		$section_button_text = $args['section_button_text'] ? $args['section_button_text'] : 'See all Posts';
+		$section_button_text = ( isset( $args['section_button_text'] ) ) ? $args['section_button_text'] : 'See all Posts';
 
 		if ($section_max_posts == 0 || $section_max_posts == 1) {
 			$section_max_posts = 1;
