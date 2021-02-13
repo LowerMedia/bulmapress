@@ -16,10 +16,10 @@ if ( ! function_exists( 'bulmapress_widgets_init' ) ) {
 	 */
 	function bulmapress_widgets_init() {
 		register_sidebar( array(
-			'name'          => esc_html__( 'Sidebar', 'bulmapress' ),
-			'id'            => 'sidebar-1',
+			'name'          => esc_html__( 'Global Sidebar', 'bulmapress' ),
+			'id'            => 'sidebar-global',
 			'description'   => esc_html__( 'Add widgets here.', 'bulmapress' ),
-			'before_widget' => '<section id="%1$s" class="widget %2$s column is-one-third">',
+			'before_widget' => '<section id="%1$s" class="widget %2$s column is-full">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title is-bold">',
 			'after_title'   => '</h2>',
