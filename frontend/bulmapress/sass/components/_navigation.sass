@@ -11,6 +11,10 @@
     &:hover
       background: inherit
 
+.navbar-menu,
+.navbar-end
+  align-items: center
+
 .navbar-item
   color: $text-light
   &.is-muted
@@ -45,6 +49,13 @@
 
 .navbar-link
   width: 100%
+
+.navbar-link,
+.navbar-item
+  @include tablet
+    text-align: center
+  @include mobile
+    text-align: center
 
 // Nav Links
 .nav-links
@@ -83,3 +94,47 @@
     position: absolute
     width: 100%
     z-index: 200 
+
+.navbar-dropdown
+  @include desktop
+    padding: 1rem 0
+  
+  .menu-item
+    padding: 5px 0 5px 0 !important
+    @include desktop
+      margin: 0 7.5%
+    @include until($desktop)
+      margin: 0 2.5%
+
+    &:not(:last-child)
+      @include desktop
+        border-bottom: 1px solid $grey-light
+
+.navbar-item.dashicons.menu-item
+  font-size: 0
+  height: auto
+  color: transparent
+
+  &:before
+    line-height: 1.5
+    font-size: 1.15rem
+    background: #3B5998
+    border-radius: 50px
+    height: 25px
+    width: 26px
+    display: table
+    color: $white
+
+.navbar-burger
+  @include until($desktop)
+    margin-left: inherit
+
+.mobile-dropdown-container.container
+  @include mobile
+    max-width: 100%
+
+ul.sidebar-menu a
+  padding-left: 0
+  font-size: 0.75rem
+  text-align: left
+  border-bottom: 1px solid $grey-light

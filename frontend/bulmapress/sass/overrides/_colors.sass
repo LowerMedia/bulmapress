@@ -1,12 +1,23 @@
 /* -- Color Defaults -- */
 
+
+// Site Specific Branding Colors
+$theme-color-blue: #1E3B55
+$theme-color-green: #6E8476
+$theme-color-tan: #EFE7D1
+$theme-color-tan-light: #f7f5ea
+$theme-color-red: #C93A3A
+$theme-color-orange: #E47238
+$theme-color-blue-lite: #4F6F8D
+$theme-color-grey: #525151
+$theme-color-grey-dark: #383737
 // Colors
 $black:	hsl(0, 0%, 4%)
 $black-bis:	hsl(0, 0%, 7%)
 $black-ter:	hsl(0, 0%, 14%)
 $grey-darker:	hsl(0, 0%, 21%)
-$grey-dark:	hsl(0, 0%, 29%)
-$grey: hsl(0, 0%, 48%)
+$grey-dark:	$theme-color-grey-dark
+$grey: $theme-color-grey
 $grey-light:	hsl(0, 0%, 71%)
 $grey-lighter:	hsl(0, 0%, 86%)
 $white-ter:	hsl(0, 0%, 96%)
@@ -27,8 +38,18 @@ $black: hsl(0, 0%, 4%)
 $light: $white-ter
 $dark: $grey-darker
 $primary: $turquoise
-$link: $blue
-$info: $cyan
+$link: $theme-color-blue
+$info: $theme-color-blue-lite
 $success: $green
-$warning: $orange
-$danger: $red
+$warning: $theme-color-orange
+$danger: $theme-color-red
+
+$button-color: $white
+
+$navbar-item-hover-background-color: transparent
+$navbar-dropdown-item-hover-background-color: transparent
+$navbar-item-hover-color: inherit
+$navbar-dropdown-arrow: $white
+$navbar-dropdown-background-color: $theme-color-tan-light
+$navbar-dropdown-item-hover-color: $black
+$navbar-dropdown-item-active-color: $black

@@ -17,3 +17,19 @@ figure
 
 .wp-caption-text
   margin-bottom: 1em
+
+img.banner-image
+  width: 100%
+
+img.site-logo
+
+  .navbar-brand &
+    @include desktop
+      position: absolute
+    @include desktop-only
+      max-width: 12.5vw
+      
+.navbar-brand a // center site logo img on mobile
+  @include until($desktop)
+    display: block
+    margin: auto

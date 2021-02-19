@@ -1,0 +1,92 @@
+
+$spacing-class-handles: ('m':'margin','p':'padding')
+
+@include desktop
+
+	@each $h, $handle in $spacing-class-handles
+
+		@each $size, $value in $spacing-values
+			.#{$h}x-#{$size}-desktop 
+				#{$handle}-left: #{$value}
+				#{$handle}-right: #{$value}
+			
+		@each $size, $value in $spacing-values
+			.#{$h}y-#{$size}-desktop 
+				#{$handle}-top: #{$value}
+				#{$handle}-bottom: #{$value}
+			
+		@each $size, $value in $spacing-values
+			.#{$h}t-#{$size}-desktop 
+				#{$handle}-top: #{$value}
+			
+		@each $size, $value in $spacing-values
+			.#{$h}r-#{$size}-desktop 
+				#{$handle}-right: #{$value}
+			
+		@each $size, $value in $spacing-values 
+			.#{$h}b-#{$size}-desktop 
+				#{$handle}-bottom: #{$value}
+			
+		@each $size, $value in $spacing-values
+			.#{$h}l-#{$size}-desktop 
+				#{$handle}-left: #{$value}
+
+@include touch
+
+	@each $h, $handle in $spacing-class-handles
+
+		@each $size, $value in $spacing-values
+			.#{$h}x-#{$size}-touch 
+				#{$handle}-left: #{$value}
+				#{$handle}-right: #{$value}
+			
+		@each $size, $value in $spacing-values
+			.#{$h}y-#{$size}-touch 
+				#{$handle}-top: #{$value}
+				#{$handle}-bottom: #{$value}
+			
+		@each $size, $value in $spacing-values
+			.#{$h}t-#{$size}-touch 
+				#{$handle}-top: #{$value}
+			
+		@each $size, $value in $spacing-values
+			.#{$h}r-#{$size}-touch 
+				#{$handle}-right: #{$value}
+			
+		@each $size, $value in $spacing-values 
+			.#{$h}b-#{$size}-touch 
+				#{$handle}-bottom: #{$value}
+			
+		@each $size, $value in $spacing-values
+			.#{$h}l-#{$size}-touch 
+				#{$handle}-left: #{$value}
+
+@include mobile
+
+	@each $h, $handle in $spacing-class-handles
+
+		@each $size, $value in $spacing-values
+			.#{$h}x-#{$size}-mobile 
+				#{$handle}-left: #{$value}
+				#{$handle}-right: #{$value}
+			
+		@each $size, $value in $spacing-values
+			.#{$h}y-#{$size}-mobile 
+				#{$handle}-top: #{$value}
+				#{$handle}-bottom: #{$value}
+			
+		@each $size, $value in $spacing-values
+			.#{$h}t-#{$size}-mobile 
+				#{$handle}-top: #{$value}
+			
+		@each $size, $value in $spacing-values
+			.#{$h}r-#{$size}-mobile 
+				#{$handle}-right: #{$value}
+			
+		@each $size, $value in $spacing-values 
+			.#{$h}b-#{$size}-mobile 
+				#{$handle}-bottom: #{$value}
+			
+		@each $size, $value in $spacing-values
+			.#{$h}l-#{$size}-mobile 
+				#{$handle}-left: #{$value}

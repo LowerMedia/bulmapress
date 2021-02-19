@@ -1,5 +1,53 @@
 @charset "utf-8"
 
+@font-face
+  font-family: "conduit old"
+  src: url("../fonts/conduit.ttf")
+
+@font-face
+  font-family: "conduit"
+  src: url("../fonts/conduit_itc.ttf")
+
+@font-face
+  font-family: "ddin old"
+  src: url("../fonts/ddin.otf")
+
+@font-face
+  font-family: "montserrat"
+  src: url("../fonts/montserrat/Montserrat-Regular.ttf")
+
+@font-face
+  font-family: "montserrat bold"
+  src: url("../fonts/montserrat/Montserrat-Bold.ttf")
+
+@font-face
+  font-family: "montserrat semi bold"
+  src: url("../fonts/montserrat/Montserrat-SemiBold.ttf")
+
+$font-main: 'montserrat'
+$font-main-bold: 'montserrat bold'
+$font-main-semi-bold: 'montserrat semi bold'
+$font-secondary: 'conduit'
+$font-tertiary: 'din-2014'
+
+body,
+.font-main
+  font-family: $font-main
+  font-weight: bold
+
+.font-main-bold
+  font-family: $font-main-bold
+
+.font-main-semi-bold
+  font-family: $font-main-semi-bold
+
+.font-conduit,
+.font-secondary
+  font-family: $font-secondary
+
+.font-tertiary
+  font-family: $font-tertiary
+
 h1,
 h2,
 h3,
@@ -15,7 +63,33 @@ h6,
   h6,
     line-height: 1.5 !important
 
+a
+
+  .footer-nav &
+    font-size: 1.25rem
+
+  .navbar-dropdown &
+    font-family: $font-main
+
+h4
+
+  footer.site-footer &
+    font-size: 0.9rem
+    font-family: $font-main-semi-bold
+
 pre
   padding: 20px
   overflow-x: scroll
   margin-bottom: 1em
+
+p
+  font-weight: 300
+
+  .home .entry-content &
+    font-size: 1.15rem
+    line-height: 2
+    text-align: justify
+
+  footer.site-footer &
+    font-size: 0.75rem
+    font-weight: 700

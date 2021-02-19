@@ -3,7 +3,7 @@
 
 // -- Import Overrides Directory 
 // Example (Default Colors) 
-@import "sass/overrides/colors"
+@import "sass/overrides/all"
 
 // -- Import Bulma
 @import "./node_modules/bulma/bulma"
@@ -12,3 +12,69 @@
 @import "sass/settings/all"
 @import "sass/elements/all"
 @import "sass/components/all"
+@import "sass/extends/spacing_classes"
+
+.has-link-white a
+	color: $white
+
+.has-text-white
+	& > .navbar-item:not(.button),
+	ul > .navbar-item:not(.button) 
+	  	color: $white
+
+.has-text-white	ul > .menu-item > .navbar-link:not(.button)
+		@include desktop
+	  		color: $white
+
+ul.footer-nav.has-text-white > .menu-item > .navbar-link:not(.button)
+  	color: $white
+
+.has-text-black
+	.navbar-item:not(.button)
+	  color: $black
+
+.primary-menu-wrap
+	z-index: 29
+
+	ul > .navbar-item
+		@include desktop
+			padding: 0.8375rem 0 0.8375rem 0.75rem
+			font-size: 1.35rem
+
+.top-nav-wrap .menu-item
+	font-size: 0.7rem // 0.65625rem
+
+	&:not(:last-of-type)
+		margin-right: 2.5px
+
+.footer-logo
+	max-width: 115px
+	@include until($desktop)
+		display: block
+		margin: auto
+
+#menu-footer-button-nav
+	@include until($desktop)
+		display: table
+		margin: auto
+
+#footer-site-navigation .navbar-menu
+	background: transparent
+
+.post-type-archive-specialties .hero-body .title span:not(.title-prefix)
+	display: none
+
+span.title-prefix
+	display: none
+
+	.post-type-archive-teams &.teams,
+	.post-type-archive-specialties &.specialties
+		display: initial
+
+.post-type-archive-teams .site-main .archives.wrapper
+	@extend .columns
+	@extend .is-multiline
+
+.post-type-archive-teams .site-main article.teams
+	@extend .column
+	@extend .is-3

@@ -4,12 +4,22 @@
     background: none !important
 .is-fullheight
   height: 100%
+.is-height-auto
+  height: auto !important
 .is-bold
-  font-weight: 500
+  font-weight: 700
 .is-centered
   margin: 0 auto
 .is-warning
   color: $warning
+.is-danger
+  color: $danger
+
+.is-line-height-1
+  line-height: 1 !important
+
+.is-whitespace-normal
+  white-space: normal !important
 
 .alignright
   float: right
@@ -19,3 +29,52 @@
   display: block
   margin-left: auto
   margin-right: auto
+
+.has-background-blue
+  background-color: $theme-color-blue
+.has-background-blue-lite
+  background-color: $theme-color-blue-lite
+.has-background-tan
+  background-color: $theme-color-tan
+.has-background-white-opaque
+  background-color: rgba($white, 0.75)
+
+.has-border-left
+  border-left: 1px solid $grey-light
+
+.has-border-left-desktop
+  @include desktop
+    border-left: 1px solid $grey-light
+
+.has-border-bottom-orange
+  border-bottom: 2.5px solid $theme-color-orange
+
+.box-shadow-div
+  height: 10px
+  width: 100%
+  position: absolute
+  z-index: 2
+
+.box-shadow-top
+  box-shadow: inset 0 0 0 0, inset 0 -11px 8px -10px grey
+
+.box-shadow-bottom
+  box-shadow: inset 0 11px 8px -10px grey, inset 0 0 0 0
+
+.box-shadow-div ~ iframe
+  position: relative
+  z-index: 1
+  margin-bottom: -15px
+
+.is-absolute
+  position: absolute
+  .page-banner .slick-slider &
+    top: 5vw
+    @include desktop
+      top: 26vw
+      max-width: 400px
+
+.pseudo-button
+  height: 100px
+  display: grid
+  align-items: center
