@@ -53,14 +53,9 @@ if ( ! function_exists( 'bulmapress_menu_toggle' ) ) {
 	}
 }
 
-if ( ! function_exists( 'bulmapress_copyright_link' ) ) {
-	function bulmapress_copyright_link($author = 'Bulmapress', $url = 'http://bulmapress.com')
-	{
-		$output = '
-			<p class="copyright-link">&copy; '. date('Y') . '
-				<a href=" ' . $url . '">' . $author . '</a>
-			</p>';
-		echo $output;
+if ( ! function_exists( 'lm_theme_copyright_link' ) ) {
+	function lm_theme_copyright_link() {
+		echo '<span class="copyright-link">&copy; '. date('Y') . ' <a href=" ' . site_url() . '">' . get_bloginfo() . '</a></span>';
 	}
 }
 

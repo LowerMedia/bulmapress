@@ -16,7 +16,7 @@
 	<div class="has-background-grey pt-5 pb-4">
 		<div class="footer-content container">
 			<div class="site-info columns is-marginless is-multiline">
-				<?php bulmapress_copyright_link(); ?>
+				<?php lm_theme_copyright_link(); ?>
 				<div class="column is-full-touch is-narrow pt-0">
 					<?php get_acf_image_from_handle('site_logo_image', true, 'footer-logo'); ?>
 				</div><!-- .column -->
@@ -55,7 +55,7 @@
 	<div class="has-background-grey-dark">
 		<div class="has-text-centered container mt-2 mb-4">
 			<div class="site-info has-text-grey-light is-size-8">
-				©<?= date('Y') ?> <?= bloginfo() ?> All Rights Reserved. Privacy Policy
+				<?php lm_theme_copyright_link(); ?> All Rights Reserved. Privacy Policy
 			</div><!-- .site-info -->
 		</div>
 	</div><!-- .container -->
