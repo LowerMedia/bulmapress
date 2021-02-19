@@ -55,7 +55,7 @@
 	<div class="has-background-grey-dark">
 		<div class="has-text-centered container mt-2 mb-4">
 			<div class="site-info has-text-grey-light is-size-8">
-				©<?= date('Y') ?> LowerMedia All Rights Reserved. Privacy Policy
+				©<?= date('Y') ?> <?= bloginfo() ?> All Rights Reserved. Privacy Policy
 			</div><!-- .site-info -->
 		</div>
 	</div><!-- .container -->
