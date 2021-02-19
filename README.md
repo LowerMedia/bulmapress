@@ -30,7 +30,7 @@ Hi. I'm a WordPress flexbox theme called Bulmapress.
 Bulmapress includes support for Infinite Scroll in Jetpack.
 
 ## Changelog
-
+- *v0.1.0 - Feb 2021*
 - *v0.0.4 - Mar 02 2019*: 
   - **Updated Bulma to 0.7.4**
   - **Switched to [Bulma-Navwalker](https://github.com/Poruno/Bulma-Navwalker)**
