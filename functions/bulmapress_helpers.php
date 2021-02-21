@@ -54,8 +54,8 @@ if ( ! function_exists( 'bulmapress_menu_toggle' ) ) {
 }
 
 if ( ! function_exists( 'lm_theme_copyright_link' ) ) {
-	function lm_theme_copyright_link() {
-		echo '<span class="copyright-link">&copy; '. date('Y') . ' <a href=" ' . site_url() . '">' . get_bloginfo() . '</a></span>';
+	function lm_theme_copyright_link($copyright_link = NULL, $copyright_name = NULL, $copyright_classes = '') {
+		echo '<span class="copyright-link">&copy; '. date('Y') . ' <a class=" '. $copyright_classes .'" href=" ' . ( ( $copyright_link ) ? $copyright_link : site_url() ) . '">' . ( ( $copyright_name ) ? $copyright_name : get_bloginfo() ) . '</a></span>';
 	}
 }
 
